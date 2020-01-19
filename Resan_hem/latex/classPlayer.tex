@@ -1,0 +1,125 @@
+\hypertarget{classPlayer}{}\section{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$car.\+h$>$}
+
+
+
+Inheritance diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classPlayer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlayer_a502255d0928df823d53f07a0adf5da7e}{Player} (float, float)
+\item 
+void \hyperlink{classPlayer_a962661bbdff64b195582edbd0dcb3e1e}{car\+Move} (float, float)
+\item 
+void \hyperlink{classPlayer_a8dded6e745a81ad9f0be87b865856de7}{fire} (std\+::vector$<$ \hyperlink{classBullet}{Bullet} $\ast$$>$ \&, const sf\+::\+Time)
+\item 
+void \hyperlink{classPlayer_a67f90504cb942a07e98a54b58d4d4a1e}{state\+Checker} (sf\+::\+Time)
+\item 
+void \hyperlink{classPlayer_a230f0202bf208e5f9c3e0ab54c2c4b15}{fire\+Checker} (sf\+::\+Time)
+\item 
+float \hyperlink{classPlayer_ab72ff0a99c17ace352a5a44bec0bfa5c}{get\+Player\+Speed} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Time \hyperlink{classPlayer_a1dd84364f2b6c74be91d6d9cc2430f59}{state\+Time} \{\}
+\item 
+float \hyperlink{classPlayer_a7b4a4d41e6c36265588539e960f4804f}{multiplier} \{1\}
+\item 
+bool \hyperlink{classPlayer_ac074e83f791eb282589df6b9456781b7}{state\+Is\+Changed} \{false\}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class Represents the \hyperlink{classPlayer}{Player} in the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlayer_a502255d0928df823d53f07a0adf5da7e}\label{classPlayer_a502255d0928df823d53f07a0adf5da7e}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{float}]{pos\+\_\+x,  }\item[{float}]{pos\+\_\+y }\end{DoxyParamCaption})}
+
+Loads the specified sprite for \hyperlink{classPlayer}{Player} and saves it. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayer_a962661bbdff64b195582edbd0dcb3e1e}\label{classPlayer_a962661bbdff64b195582edbd0dcb3e1e}} 
+\index{Player@{Player}!car\+Move@{car\+Move}}
+\index{car\+Move@{car\+Move}!Player@{Player}}
+\subsubsection{\texorpdfstring{car\+Move()}{carMove()}}
+{\footnotesize\ttfamily void Player\+::car\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Specifik car\+Move funktion 
+
+Implements \hyperlink{classCar_a9650df764ceee00f738b888a7a976996}{Car}.
+
+\mbox{\Hypertarget{classPlayer_a8dded6e745a81ad9f0be87b865856de7}\label{classPlayer_a8dded6e745a81ad9f0be87b865856de7}} 
+\index{Player@{Player}!fire@{fire}}
+\index{fire@{fire}!Player@{Player}}
+\subsubsection{\texorpdfstring{fire()}{fire()}}
+{\footnotesize\ttfamily void Player\+::fire (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classBullet}{Bullet} $\ast$$>$ \&}]{Bullets,  }\item[{const sf\+::\+Time}]{game\+\_\+time }\end{DoxyParamCaption})}
+
+Adds a new \hyperlink{classBullet}{Bullet} to the a bullet vector, and changes fire\+Time to the time parameter. \mbox{\Hypertarget{classPlayer_a230f0202bf208e5f9c3e0ab54c2c4b15}\label{classPlayer_a230f0202bf208e5f9c3e0ab54c2c4b15}} 
+\index{Player@{Player}!fire\+Checker@{fire\+Checker}}
+\index{fire\+Checker@{fire\+Checker}!Player@{Player}}
+\subsubsection{\texorpdfstring{fire\+Checker()}{fireChecker()}}
+{\footnotesize\ttfamily void Player\+::fire\+Checker (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{comp\+\_\+time }\end{DoxyParamCaption})}
+
+Checks if player can fire and changes the can\+Fire bool to true if the player can fire. \mbox{\Hypertarget{classPlayer_ab72ff0a99c17ace352a5a44bec0bfa5c}\label{classPlayer_ab72ff0a99c17ace352a5a44bec0bfa5c}} 
+\index{Player@{Player}!get\+Player\+Speed@{get\+Player\+Speed}}
+\index{get\+Player\+Speed@{get\+Player\+Speed}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Player\+Speed()}{getPlayerSpeed()}}
+{\footnotesize\ttfamily float Player\+::get\+Player\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns player\+\_\+speed float. \mbox{\Hypertarget{classPlayer_a67f90504cb942a07e98a54b58d4d4a1e}\label{classPlayer_a67f90504cb942a07e98a54b58d4d4a1e}} 
+\index{Player@{Player}!state\+Checker@{state\+Checker}}
+\index{state\+Checker@{state\+Checker}!Player@{Player}}
+\subsubsection{\texorpdfstring{state\+Checker()}{stateChecker()}}
+{\footnotesize\ttfamily void Player\+::state\+Checker (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{comp\+\_\+time }\end{DoxyParamCaption})}
+
+Checks if state should still be changed depending on the Time parameter. Changes the state\+Is\+Changed bool to false if the state shouldn\textquotesingle{}t be changed 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classPlayer_a7b4a4d41e6c36265588539e960f4804f}\label{classPlayer_a7b4a4d41e6c36265588539e960f4804f}} 
+\index{Player@{Player}!multiplier@{multiplier}}
+\index{multiplier@{multiplier}!Player@{Player}}
+\subsubsection{\texorpdfstring{multiplier}{multiplier}}
+{\footnotesize\ttfamily float Player\+::multiplier \{1\}}
+
+Players movement multiplier depending on \hyperlink{classBuff__debuff}{Buff\+\_\+debuff} effect \mbox{\Hypertarget{classPlayer_ac074e83f791eb282589df6b9456781b7}\label{classPlayer_ac074e83f791eb282589df6b9456781b7}} 
+\index{Player@{Player}!state\+Is\+Changed@{state\+Is\+Changed}}
+\index{state\+Is\+Changed@{state\+Is\+Changed}!Player@{Player}}
+\subsubsection{\texorpdfstring{state\+Is\+Changed}{stateIsChanged}}
+{\footnotesize\ttfamily bool Player\+::state\+Is\+Changed \{false\}}
+
+Represents if the players state is changed \mbox{\Hypertarget{classPlayer_a1dd84364f2b6c74be91d6d9cc2430f59}\label{classPlayer_a1dd84364f2b6c74be91d6d9cc2430f59}} 
+\index{Player@{Player}!state\+Time@{state\+Time}}
+\index{state\+Time@{state\+Time}!Player@{Player}}
+\subsubsection{\texorpdfstring{state\+Time}{stateTime}}
+{\footnotesize\ttfamily sf\+::\+Time Player\+::state\+Time \{\}}
+
+Time when state should stop affecting player. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+car.\+h\item 
+car.\+cpp\end{DoxyCompactItemize}

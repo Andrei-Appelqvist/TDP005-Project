@@ -1,0 +1,76 @@
+\hypertarget{classObject}{}\section{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+
+
+Inheritance diagram for Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classObject__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classObject_a9e90592420891436fef1a41c42498e8b}{draw} (sf\+::\+Render\+Window \&)
+\item 
+sf\+::\+Sprite \hyperlink{classObject_ae38e77de9a92daab0e6fea8d3ba56fdd}{get\+Shape} ()
+\item 
+void \hyperlink{classObject_a2cded255e6f55fb4542ca036450876f3}{move} (float, float)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Texture \hyperlink{classObject_a8abc6192982ee39b2dc9d9b05cc155ee}{texture}
+\item 
+sf\+::\+Sprite \hyperlink{classObject_a563c6c058bb3549ef8bc8cbc01c4e7e1}{shape}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class Represents all active objects in the game. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classObject_a9e90592420891436fef1a41c42498e8b}\label{classObject_a9e90592420891436fef1a41c42498e8b}} 
+\index{Object@{Object}!draw@{draw}}
+\index{draw@{draw}!Object@{Object}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Object\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+Draws the saved sprite \char`\"{}shape\char`\"{} to a Render\+Window refrence. \mbox{\Hypertarget{classObject_ae38e77de9a92daab0e6fea8d3ba56fdd}\label{classObject_ae38e77de9a92daab0e6fea8d3ba56fdd}} 
+\index{Object@{Object}!get\+Shape@{get\+Shape}}
+\index{get\+Shape@{get\+Shape}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Shape()}{getShape()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Object\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the saved Sprite \char`\"{}shape\char`\"{}. \mbox{\Hypertarget{classObject_a2cded255e6f55fb4542ca036450876f3}\label{classObject_a2cded255e6f55fb4542ca036450876f3}} 
+\index{Object@{Object}!move@{move}}
+\index{move@{move}!Object@{Object}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Object\+::move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Moves the saved sprite \char`\"{}shape\char`\"{} by adding or subtracting the sprites x and/or y position 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classObject_a563c6c058bb3549ef8bc8cbc01c4e7e1}\label{classObject_a563c6c058bb3549ef8bc8cbc01c4e7e1}} 
+\index{Object@{Object}!shape@{shape}}
+\index{shape@{shape}!Object@{Object}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily sf\+::\+Sprite Object\+::shape\hspace{0.3cm}{\ttfamily [protected]}}
+
+Represents the objects sprite. \mbox{\Hypertarget{classObject_a8abc6192982ee39b2dc9d9b05cc155ee}\label{classObject_a8abc6192982ee39b2dc9d9b05cc155ee}} 
+\index{Object@{Object}!texture@{texture}}
+\index{texture@{texture}!Object@{Object}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily sf\+::\+Texture Object\+::texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+Represents the texture used in Shape. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+object.\+h\item 
+object.\+cpp\end{DoxyCompactItemize}
