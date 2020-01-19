@@ -1,0 +1,9 @@
+<map id="Object" name="Object">
+<area shape="rect" id="node2" href="$classBuff__debuff.html" title="Buff_debuff" alt="" coords="27,80,117,107"/>
+<area shape="rect" id="node5" href="$classBullet.html" title="Bullet" alt="" coords="141,80,195,107"/>
+<area shape="rect" id="node6" href="$classCar.html" title="Car" alt="" coords="220,80,263,107"/>
+<area shape="rect" id="node3" href="$classBottle.html" title="Bottle" alt="" coords="5,155,61,181"/>
+<area shape="rect" id="node4" href="$classTurbo.html" title="Turbo" alt="" coords="86,155,141,181"/>
+<area shape="rect" id="node7" href="$classEnemy.html" title="Enemy" alt="" coords="187,155,250,181"/>
+<area shape="rect" id="node8" href="$classPlayer.html" title="Player" alt="" coords="275,155,333,181"/>
+</map>

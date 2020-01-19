@@ -1,0 +1,93 @@
+\hypertarget{classEnemy}{}\section{Enemy Class Reference}
+\label{classEnemy}\index{Enemy@{Enemy}}
+
+
+{\ttfamily \#include $<$car.\+h$>$}
+
+
+
+Inheritance diagram for Enemy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{classEnemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enemy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{classEnemy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEnemy_a3aca7827da68a391100d2bc1a4873625}{Enemy} (float, float)
+\item 
+void \hyperlink{classEnemy_a8b36ae5a6d6fd18d0064139ce92e7661}{car\+Move} (float, float)
+\item 
+void \hyperlink{classEnemy_a58402ae6b3e519ecad7d1c61961a4904}{change\+Lane} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classEnemy_a2d4bfba6681a78723c61c284a5e1f2d5}{is\+Moving\+Left} \{false\}
+\item 
+bool \hyperlink{classEnemy_a69ab0772337c6de349a6a412d10876e7}{is\+Moving\+Right} \{false\}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class Represents the enemies in the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEnemy_a3aca7827da68a391100d2bc1a4873625}\label{classEnemy_a3aca7827da68a391100d2bc1a4873625}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{float}]{pos\+\_\+x,  }\item[{float}]{pos\+\_\+y }\end{DoxyParamCaption})}
+
+Loads the specified sprite for \hyperlink{classEnemy}{Enemy} and saves it. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnemy_a8b36ae5a6d6fd18d0064139ce92e7661}\label{classEnemy_a8b36ae5a6d6fd18d0064139ce92e7661}} 
+\index{Enemy@{Enemy}!car\+Move@{car\+Move}}
+\index{car\+Move@{car\+Move}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{car\+Move()}{carMove()}}
+{\footnotesize\ttfamily void Enemy\+::car\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Specifik car\+Move funktion 
+
+Implements \hyperlink{classCar_a9650df764ceee00f738b888a7a976996}{Car}.
+
+\mbox{\Hypertarget{classEnemy_a58402ae6b3e519ecad7d1c61961a4904}\label{classEnemy_a58402ae6b3e519ecad7d1c61961a4904}} 
+\index{Enemy@{Enemy}!change\+Lane@{change\+Lane}}
+\index{change\+Lane@{change\+Lane}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{change\+Lane()}{changeLane()}}
+{\footnotesize\ttfamily void Enemy\+::change\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Changes \hyperlink{classEnemy}{Enemy} position on the x axle depending on the bool variables is\+Moving\+Left and is\+Moving\+Right. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classEnemy_a2d4bfba6681a78723c61c284a5e1f2d5}\label{classEnemy_a2d4bfba6681a78723c61c284a5e1f2d5}} 
+\index{Enemy@{Enemy}!is\+Moving\+Left@{is\+Moving\+Left}}
+\index{is\+Moving\+Left@{is\+Moving\+Left}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{is\+Moving\+Left}{isMovingLeft}}
+{\footnotesize\ttfamily bool Enemy\+::is\+Moving\+Left \{false\}}
+
+Shows if the \hyperlink{classEnemy}{Enemy} should be moving left or not \mbox{\Hypertarget{classEnemy_a69ab0772337c6de349a6a412d10876e7}\label{classEnemy_a69ab0772337c6de349a6a412d10876e7}} 
+\index{Enemy@{Enemy}!is\+Moving\+Right@{is\+Moving\+Right}}
+\index{is\+Moving\+Right@{is\+Moving\+Right}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{is\+Moving\+Right}{isMovingRight}}
+{\footnotesize\ttfamily bool Enemy\+::is\+Moving\+Right \{false\}}
+
+Shows if the \hyperlink{classEnemy}{Enemy} should be moving right or not 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+car.\+h\item 
+car.\+cpp\end{DoxyCompactItemize}

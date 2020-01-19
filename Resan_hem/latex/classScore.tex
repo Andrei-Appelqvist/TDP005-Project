@@ -1,0 +1,78 @@
+\hypertarget{classScore}{}\section{Score Class Reference}
+\label{classScore}\index{Score@{Score}}
+
+
+{\ttfamily \#include $<$score.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classScore_a039c99843551e5e4b512ecee99e46617}{Score} ()
+\item 
+int \hyperlink{classScore_a0edd6880a4747e9ec07751030bdd4689}{get\+\_\+score} ()
+\item 
+void \hyperlink{classScore_a98e9cf2e21db2a2b0ed2751bb53e8255}{update\+\_\+score} (int)
+\item 
+void \hyperlink{classScore_a4e4e4e4d043b7b4574827b5a670d55a0}{check\+\_\+time} (sf\+::\+Time)
+\item 
+void \hyperlink{classScore_a933dc121ad262cd9729f973e02a70cf2}{draw\+Score} (sf\+::\+Render\+Window \&)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classScore_afa64d0ac8f47b5eb21c83d9d1d529877}{count} \{0\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is responsible for keeping and counting the score when the game is running. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScore_a039c99843551e5e4b512ecee99e46617}\label{classScore_a039c99843551e5e4b512ecee99e46617}} 
+\index{Score@{Score}!Score@{Score}}
+\index{Score@{Score}!Score@{Score}}
+\subsubsection{\texorpdfstring{Score()}{Score()}}
+{\footnotesize\ttfamily Score\+::\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The constructor creates an sf\+::\+Text object with a the font variable, a set position and color. This is the ingame score counter. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classScore_a4e4e4e4d043b7b4574827b5a670d55a0}\label{classScore_a4e4e4e4d043b7b4574827b5a670d55a0}} 
+\index{Score@{Score}!check\+\_\+time@{check\+\_\+time}}
+\index{check\+\_\+time@{check\+\_\+time}!Score@{Score}}
+\subsubsection{\texorpdfstring{check\+\_\+time()}{check\_time()}}
+{\footnotesize\ttfamily void Score\+::check\+\_\+time (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{game\+\_\+time }\end{DoxyParamCaption})}
+
+The bread and butter of this class. This funtion checks if a second has passed and updates the score by one everytime this happens. \mbox{\Hypertarget{classScore_a933dc121ad262cd9729f973e02a70cf2}\label{classScore_a933dc121ad262cd9729f973e02a70cf2}} 
+\index{Score@{Score}!draw\+Score@{draw\+Score}}
+\index{draw\+Score@{draw\+Score}!Score@{Score}}
+\subsubsection{\texorpdfstring{draw\+Score()}{drawScore()}}
+{\footnotesize\ttfamily void Score\+::draw\+Score (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+This function draws the score on the screen. \mbox{\Hypertarget{classScore_a0edd6880a4747e9ec07751030bdd4689}\label{classScore_a0edd6880a4747e9ec07751030bdd4689}} 
+\index{Score@{Score}!get\+\_\+score@{get\+\_\+score}}
+\index{get\+\_\+score@{get\+\_\+score}!Score@{Score}}
+\subsubsection{\texorpdfstring{get\+\_\+score()}{get\_score()}}
+{\footnotesize\ttfamily int Score\+::get\+\_\+score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter function that returns the private variable score. \mbox{\Hypertarget{classScore_a98e9cf2e21db2a2b0ed2751bb53e8255}\label{classScore_a98e9cf2e21db2a2b0ed2751bb53e8255}} 
+\index{Score@{Score}!update\+\_\+score@{update\+\_\+score}}
+\index{update\+\_\+score@{update\+\_\+score}!Score@{Score}}
+\subsubsection{\texorpdfstring{update\+\_\+score()}{update\_score()}}
+{\footnotesize\ttfamily void Score\+::update\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{add }\end{DoxyParamCaption})}
+
+Function that takes an int as a parameter and adds that int to the score. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classScore_afa64d0ac8f47b5eb21c83d9d1d529877}\label{classScore_afa64d0ac8f47b5eb21c83d9d1d529877}} 
+\index{Score@{Score}!count@{count}}
+\index{count@{count}!Score@{Score}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily float Score\+::count \{0\}}
+
+Public variable that helps to check the time. Every second this variable is being increased by one. Everytime this happens the score is being updated. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+score.\+h\item 
+score.\+cpp\end{DoxyCompactItemize}

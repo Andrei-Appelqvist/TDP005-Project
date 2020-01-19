@@ -1,0 +1,102 @@
+\hypertarget{classGame__Field}{}\section{Game\+\_\+\+Field Class Reference}
+\label{classGame__Field}\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+
+
+{\ttfamily \#include $<$game\+\_\+field.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGame__Field_aa62311d75d2c83c069535ca310b7585d}{Game\+\_\+\+Field} ()
+\item 
+\hyperlink{classGame__Field_a1cc20d15758ae0d3e31492448bc4d47f}{$\sim$\+Game\+\_\+\+Field} ()
+\item 
+std\+::vector$<$ sf\+::\+Texture $\ast$ $>$ \hyperlink{classGame__Field_ad2f37858f33af0caf2cd4ba0107a9a24}{load} ()
+\item 
+void \hyperlink{classGame__Field_a60de25cfcba5f7f67a5bf510cdc13326}{display} (sf\+::\+Render\+Window \&)
+\item 
+int \hyperlink{classGame__Field_a2a328d2a97c5f90a2cd35a89e1cedb01}{enemy\+\_\+spawn} ()
+\item 
+int \hyperlink{classGame__Field_a8f7d0feefd13f9ba229e08d4e270528d}{buff\+\_\+spawn} ()
+\item 
+float \hyperlink{classGame__Field_a6ccee168fe4ca574f3b9de452cecc38c}{x\+\_\+spawn} ()
+\item 
+int \hyperlink{classGame__Field_ae174d69a829b073c9b64e9f15e57870d}{enemy\+\_\+move} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classGame__Field_a3d3cda2cf3a0eae2229f5b4a6e0ae532}{loop\+\_\+speed} \{3\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class Takes care of spawn probability, and the background loop. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame__Field_aa62311d75d2c83c069535ca310b7585d}\label{classGame__Field_aa62311d75d2c83c069535ca310b7585d}} 
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Field()}{Game\_Field()}}
+{\footnotesize\ttfamily Game\+\_\+\+Field\+::\+Game\+\_\+\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts the load function for the background \mbox{\Hypertarget{classGame__Field_a1cc20d15758ae0d3e31492448bc4d47f}\label{classGame__Field_a1cc20d15758ae0d3e31492448bc4d47f}} 
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!````~Game\+\_\+\+Field@{$\sim$\+Game\+\_\+\+Field}}
+\index{````~Game\+\_\+\+Field@{$\sim$\+Game\+\_\+\+Field}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\subsubsection{\texorpdfstring{$\sim$\+Game\+\_\+\+Field()}{~Game\_Field()}}
+{\footnotesize\ttfamily Game\+\_\+\+Field\+::$\sim$\+Game\+\_\+\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Deletes all the textures for the background 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame__Field_a8f7d0feefd13f9ba229e08d4e270528d}\label{classGame__Field_a8f7d0feefd13f9ba229e08d4e270528d}} 
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!buff\+\_\+spawn@{buff\+\_\+spawn}}
+\index{buff\+\_\+spawn@{buff\+\_\+spawn}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\subsubsection{\texorpdfstring{buff\+\_\+spawn()}{buff\_spawn()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Field\+::buff\+\_\+spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an int for deciding if a \hyperlink{classTurbo}{Turbo} or \hyperlink{classBottle}{Bottle} should spawn. \mbox{\Hypertarget{classGame__Field_a60de25cfcba5f7f67a5bf510cdc13326}\label{classGame__Field_a60de25cfcba5f7f67a5bf510cdc13326}} 
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!display@{display}}
+\index{display@{display}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Field\+::display (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+Displays the current index of the background loop to the window parameter. \mbox{\Hypertarget{classGame__Field_ae174d69a829b073c9b64e9f15e57870d}\label{classGame__Field_ae174d69a829b073c9b64e9f15e57870d}} 
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!enemy\+\_\+move@{enemy\+\_\+move}}
+\index{enemy\+\_\+move@{enemy\+\_\+move}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\subsubsection{\texorpdfstring{enemy\+\_\+move()}{enemy\_move()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Field\+::enemy\+\_\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an int for deciding if a \hyperlink{classEnemy}{Enemy} should move. \mbox{\Hypertarget{classGame__Field_a2a328d2a97c5f90a2cd35a89e1cedb01}\label{classGame__Field_a2a328d2a97c5f90a2cd35a89e1cedb01}} 
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!enemy\+\_\+spawn@{enemy\+\_\+spawn}}
+\index{enemy\+\_\+spawn@{enemy\+\_\+spawn}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\subsubsection{\texorpdfstring{enemy\+\_\+spawn()}{enemy\_spawn()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Field\+::enemy\+\_\+spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an int for deciding if a \hyperlink{classEnemy}{Enemy} should spawn. \mbox{\Hypertarget{classGame__Field_ad2f37858f33af0caf2cd4ba0107a9a24}\label{classGame__Field_ad2f37858f33af0caf2cd4ba0107a9a24}} 
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!load@{load}}
+\index{load@{load}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily std\+::vector$<$ sf\+::\+Texture $\ast$ $>$ Game\+\_\+\+Field\+::load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Loads all the background textures and saves pointers to them in a vector, which it then returns. \mbox{\Hypertarget{classGame__Field_a6ccee168fe4ca574f3b9de452cecc38c}\label{classGame__Field_a6ccee168fe4ca574f3b9de452cecc38c}} 
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!x\+\_\+spawn@{x\+\_\+spawn}}
+\index{x\+\_\+spawn@{x\+\_\+spawn}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\subsubsection{\texorpdfstring{x\+\_\+spawn()}{x\_spawn()}}
+{\footnotesize\ttfamily float Game\+\_\+\+Field\+::x\+\_\+spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a float representing an Objects x spawn value. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGame__Field_a3d3cda2cf3a0eae2229f5b4a6e0ae532}\label{classGame__Field_a3d3cda2cf3a0eae2229f5b4a6e0ae532}} 
+\index{Game\+\_\+\+Field@{Game\+\_\+\+Field}!loop\+\_\+speed@{loop\+\_\+speed}}
+\index{loop\+\_\+speed@{loop\+\_\+speed}!Game\+\_\+\+Field@{Game\+\_\+\+Field}}
+\subsubsection{\texorpdfstring{loop\+\_\+speed}{loop\_speed}}
+{\footnotesize\ttfamily int Game\+\_\+\+Field\+::loop\+\_\+speed \{3\}}
+
+Represents the current loop speed for the display function. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game\+\_\+field.\+h\item 
+game\+\_\+field.\+cpp\end{DoxyCompactItemize}
