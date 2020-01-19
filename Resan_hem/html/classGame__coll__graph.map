@@ -1,8 +1,0 @@
-<map id="Game" name="Game">
-<area shape="rect" id="node2" href="$classGame__Field.html" title="Game_Field" alt="" coords="5,157,97,184"/>
-<area shape="rect" id="node3" href="$classCollision.html" title="Collision" alt="" coords="122,157,194,184"/>
-<area shape="rect" id="node4" href="$classScore.html" title="Score" alt="" coords="218,157,274,184"/>
-<area shape="rect" id="node5" href="$classPlayer.html" title="Player" alt="" coords="298,157,357,184"/>
-<area shape="rect" id="node6" href="$classCar.html" title="Car" alt="" coords="306,81,349,108"/>
-<area shape="rect" id="node7" href="$classObject.html" title="Object" alt="" coords="297,5,357,32"/>
-</map>
